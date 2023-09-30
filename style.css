@@ -1,0 +1,98 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Overall layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Timer Input Section */
+.timer-input-section {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Input fields */
+.timer-input-section input {
+    width: 30%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Start button */
+.timer-input-section button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Active Timers Display Section */
+.active-timers-section {
+    width: 60%;
+}
+
+/* Timer item */
+.timer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Stop button */
+.timer-item button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Timer End Display Design */
+.timer-end-section {
+    width: 30%;
+    padding: 20px;
+}
+
+/* Figma-style timer display */
+.timer-end-section .timer-end-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+/* Additional styling for your timer end item can go here */
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .timer-input-section, .active-timers-section, .timer-end-section {
+        width: 100%;
+    }
+}
